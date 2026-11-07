@@ -104,6 +104,20 @@
             </tr>
           </tfoot>
         </table>
+
+        <button type="button" id="otworz-pakowanie">Otwórz listę rzeczy do spakowania</button>
+        <dialog id="pakowanie" aria-labelledby="tytul-pakowania">
+          <h3 id="tytul-pakowania">Co spakować?</h3>
+          <ul>
+            <li>Lekkie ubrania na ciepłe dni i cienka bluza na wieczory.</li>
+            <li>Wygodne buty na wędrówki po klifach Algarve i brukowanych uliczkach.</li>
+            <li>Krem z filtrem, okulary przeciwsłoneczne i nakrycie głowy.</li>
+            <li>Dokumenty, bilety lotnicze i prawo jazdy do wynajmu samochodu.</li>
+            <li>Ładowarka, powerbank i adapter do telefonu.</li>
+            <li>Butelka na wodę i mała apteczka.</li>
+          </ul>
+          <button type="button" id="zamknij-pakowanie">Zamknij</button>
+        </dialog>
       </section>
 
       <section id="artykuly">
@@ -272,5 +286,19 @@
       <p><a href="#top">Wróć na górę</a></p>
       <p>&copy; 2026 Krzysztof Chmielewski. Wszelkie prawa zastrzeżone.</p>
     </footer>
+
+    <script>
+      const przyciskOtworz = document.getElementById('otworz-pakowanie');
+      const okno = document.getElementById('pakowanie');
+      const przyciskZamknij = document.getElementById('zamknij-pakowanie');
+
+      przyciskOtworz.addEventListener('click', function () {
+        okno.showModal();
+      });
+
+      przyciskZamknij.addEventListener('click', function () {
+        okno.close();
+      });
+    </script>
   </body>
 </html>
