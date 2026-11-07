@@ -180,6 +180,33 @@
     </main>
 
     <footer>
+      <h2>Napisz do mnie</h2>
+      <form>
+        <fieldset>
+          <legend>Dane kontaktowe</legend>
+          <p>
+            <label for="imie">Imię</label>
+            <input type="text" id="imie" name="imie">
+          </p>
+          <p>
+            <label for="email">Adres e-mail</label>
+            <input type="email" id="email" name="email" required>
+          </p>
+        </fieldset>
+        <fieldset>
+          <legend>Wiadomość</legend>
+          <p>
+            <label for="temat">Temat</label>
+            <input type="text" id="temat" name="temat">
+          </p>
+          <p>
+            <label for="wiadomosc">Treść wiadomości</label>
+            <textarea id="wiadomosc" name="wiadomosc" rows="5" required></textarea>
+          </p>
+        </fieldset>
+        <button type="submit">Wyślij wiadomość</button>
+      </form>
+
       <p>Autor: Krzysztof Chmielewski</p>
       <p>Kontakt: <a href="mailto:s4033kc@ms.wwsi.edu.pl">s4033kc@ms.wwsi.edu.pl</a></p>
       <p><a href="#top">Wróć na górę</a></p>
